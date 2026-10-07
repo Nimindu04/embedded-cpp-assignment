@@ -8,7 +8,7 @@ int main()
     constexpr Millivolts v1 = Millivolts(1000);
     constexpr Millivolts v2 = Millivolts(500);
 
-
+    constexpr auto v3 = v1 + v2;
     static_assert(v3.value() == 1500);
 
     // Subtraction
